@@ -20,7 +20,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
     "nuxt": "npm:nuxt3@latest",
-    "prisma": "^4.2.0",
+    "prisma": "^4.2.1",
     "@formkit/auto-animate": "^1.0.0-beta.1",
     "@formkit/core": "^1.0.0-beta.10",
     "@formkit/nuxt": "^1.0.0-beta.10",
