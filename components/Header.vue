@@ -32,7 +32,12 @@
         </button>
 
         <template #fallback>
-          <div class="h-8 w-8" />
+          <button class="btn btn-ghost btn-circle">
+            <Icon
+              name="heroicons:moon-20-solid"
+              class="text-xl"
+            />
+          </button>
         </template>
       </ClientOnly>
       <NuxtLink
