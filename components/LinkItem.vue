@@ -72,7 +72,6 @@
 </template>
 
 <script setup lang="ts">
-import { Link } from '.prisma/client';
 const config = useRuntimeConfig();
 const { copy } = useClipboard();
 const copyActive = ref(false);

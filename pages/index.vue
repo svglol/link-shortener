@@ -42,26 +42,27 @@
 </template>
 <script setup lang="ts">
 import { reset } from '@formkit/core';
-import { Link } from '@prisma/client';
 const uuid = useUUID();
 const config = useRuntimeConfig();
-const client = useClient();
-const { data: links } = await useAsyncQuery(['links.list', { uuid: uuid.value }]);
+const { $client } = useNuxtApp();
+const { data: links } = await $client.list.useQuery({ uuid: uuid.value ?? '' });
+
 const { copy } = useClipboard();
 
 async function createLink(data: { url: string }) {
-  const result = await client.mutation('links.create', {
-    uuid: uuid.value,
+  const mutate = await $client.create.mutate({
+    uuid: uuid.value ?? '',
     url: data.url,
   });
-  links.value.unshift(result);
-  copy(`${config.BASE_URL}${result.id}`);
+  links.value.unshift(mutate);
+  console.log(config);
+  copy(`${config.public.baseUrl}${mutate.id}`);
   reset('linkForm');
   window.scrollTo(0, 0);
 }
 
 async function deleteLink(item: Link) {
-  await client.mutation('links.delete', {
+  await $client.delete.mutate({
     id: item.id,
   });
   links.value = links.value.filter((link) => link.id !== item.id);

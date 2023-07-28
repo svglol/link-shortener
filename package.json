@@ -6,7 +6,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint . --ext .ts,.vue,.js,.cjs",
-    "lint-fix": "eslint . --ext .ts,.vue,.js,.cjs"
+    "lint-fix": "eslint . --ext .ts,.vue,.js,.cjs --fix",
+    "postinstall": "nuxt prepare && prisma generate",
+    "test:types": "nuxt typecheck"
   },
   "devDependencies": {
     "@formkit/auto-animate": "^0.7.0",

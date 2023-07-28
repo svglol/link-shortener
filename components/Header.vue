@@ -10,10 +10,7 @@
       </NuxtLink>
     </div>
     <div class="navbar-end">
-      <ColorScheme
-        placeholder=""
-        tag="span"
-      >
+      <ClientOnly>
         <button
           class="btn btn-ghost btn-circle"
           @click="switchTheme"
@@ -49,7 +46,11 @@
             </div>
           </label>
         </button>
-      </ColorScheme>
+
+        <template #fallback>
+          <div class="h-8 w-8" />
+        </template>
+      </ClientOnly>
       <NuxtLink
         to="https://github.com/svglol/nuxt3-link-shortener"
         target="_blank"
