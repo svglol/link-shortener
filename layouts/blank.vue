@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Link Shortener' });
+useHead({ title: 'Link Shortener' })
 </script>

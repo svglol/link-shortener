@@ -48,4 +48,4 @@ module.exports = {
     ],
   },
   plugins: [require('daisyui'), require('@formkit/themes/tailwindcss')],
-};
+}

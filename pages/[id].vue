@@ -6,7 +6,7 @@
 definePageMeta({
   layout: 'blank',
   middleware: 'redirect',
-});
+})
 </script>
 
 <style></style>
