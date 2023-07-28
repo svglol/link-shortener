@@ -1,5 +1,5 @@
-import { useNuxtApp } from '#app';
-import { sendRedirect } from 'h3';
+import { useNuxtApp } from '#app'
+import { sendRedirect } from 'h3'
 
 /**
  * Performs an external redirect in a Nuxt3 route middleware. Once this Nuxt3
@@ -11,20 +11,23 @@ import { sendRedirect } from 'h3';
  * @param code - An HTTP status code, 301 by default.
  * @returns
  */
-export default function externalRedirect(url: string, code = 301): never | Promise<void> {
+export default function externalRedirect(
+  url: string,
+  code = 301
+): never | Promise<void> {
   if (/^https?:\/\//.test(url)) {
     if (process.server) {
-      const nuxtApp = useNuxtApp();
+      const nuxtApp = useNuxtApp()
       if (nuxtApp.ssrContext && nuxtApp.ssrContext.event) {
         return nuxtApp.callHook('app:redirected').then(() => {
           if (nuxtApp.ssrContext && nuxtApp.ssrContext.event) {
-            return sendRedirect(nuxtApp.ssrContext.event, url, code);
+            return sendRedirect(nuxtApp.ssrContext.event, url, code)
           }
-        });
+        })
       }
     } else {
-      window.location.href = url;
+      window.location.href = url
     }
   }
-  throw new Error('Cannot redirect to invalid URL.');
+  throw new Error('Cannot redirect to invalid URL.')
 }

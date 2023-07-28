@@ -1,10 +1,12 @@
 <template>
   <div>
-    <Header />
+    <SiteHeader />
     <NuxtPage />
   </div>
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Link Shortener' });
+import SiteHeader from 'components/SiteHeader.vue'
+
+useHead({ title: 'Link Shortener' })
 </script>
