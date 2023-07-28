@@ -8,7 +8,8 @@
     "lint": "eslint . --ext .ts,.vue,.js,.cjs",
     "lint-fix": "eslint . --ext .ts,.vue,.js,.cjs --fix",
     "postinstall": "nuxt prepare && prisma generate",
-    "test:types": "nuxt typecheck"
+    "test:types": "nuxt typecheck",
+    "test": "vitest --run"
   },
   "devDependencies": {
     "@formkit/auto-animate": "^0.7.0",
@@ -29,11 +30,14 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.15.1",
+    "happy-dom": "^10.5.2",
     "nuxt": "3.6.5",
     "nuxt-icon": "^0.4.2",
+    "nuxt-vitest": "^0.10.2",
     "prisma": "^5.0.0",
     "trpc-nuxt": "^0.10.6",
     "uuid": "^9.0.0",
+    "vitest": "^0.33.0",
     "zod": "^3.21.4"
   }
 }

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/devtools',
     'nuxt-icon',
+    'nuxt-vitest',
   ],
 
   runtimeConfig: {
