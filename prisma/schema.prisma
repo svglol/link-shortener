@@ -3,19 +3,17 @@
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
+  provider     = "cockroachdb"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
 model Link {
-  id String @unique
-  createdAt  DateTime   @default(now())
-  url  String
-  uuid String
+  id        String   @unique
+  createdAt DateTime @default(now())
+  url       String
+  uuid      String
 }
-
