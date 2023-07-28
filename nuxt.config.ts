@@ -1,6 +1,13 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@formkit/nuxt', '@nuxtjs/color-mode', '@vueuse/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@formkit/nuxt',
+    '@nuxtjs/color-mode',
+    '@vueuse/nuxt',
+    '@nuxt/devtools',
+    'nuxt-icon',
+  ],
 
   runtimeConfig: {
     public: {
@@ -29,5 +36,9 @@ export default defineNuxtConfig({
 
   build: {
     transpile: ['trpc-nuxt'],
+  },
+
+  devtools: {
+    enabled: true,
   },
 });
