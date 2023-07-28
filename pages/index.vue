@@ -55,7 +55,6 @@ async function createLink(data: { url: string }) {
     url: data.url,
   });
   links.value.unshift(mutate);
-  console.log(config);
   copy(`${config.public.baseUrl}${mutate.id}`);
   reset('linkForm');
   window.scrollTo(0, 0);
