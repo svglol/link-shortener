@@ -32,8 +32,8 @@
   "devDependencies": {
     "@nuxt/devtools": "0.7.1",
     "@nuxt/eslint-config": "0.1.1",
-    "@typescript-eslint/eslint-plugin": "6.2.0",
-    "@typescript-eslint/parser": "6.2.0",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
     "eslint": "8.46.0",
     "eslint-config-prettier": "8.9.0",
     "eslint-plugin-nuxt": "4.0.0",
