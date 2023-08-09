@@ -23,7 +23,7 @@
     "@vueuse/nuxt": "^10.2.1",
     "daisyui": "^3.5.0",
     "nuxt": "3.6.5",
-    "nuxt-icon": "^0.4.2",
+    "nuxt-icon": "^0.5.0",
     "prisma": "^5.0.0",
     "trpc-nuxt": "^0.10.6",
     "uuid": "^9.0.0",
