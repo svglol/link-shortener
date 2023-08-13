@@ -14,7 +14,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.7.0",
     "@formkit/core": "^0.18.0",
-    "@formkit/nuxt": "^0.17.5",
+    "@formkit/nuxt": "^0.18.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@prisma/client": "^5.0.0",
