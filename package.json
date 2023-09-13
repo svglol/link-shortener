@@ -40,7 +40,7 @@
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-vue": "9.17.0",
     "happy-dom": "10.10.4",
-    "nuxt-vitest": "0.10.2",
+    "nuxt-vitest": "0.10.5",
     "vitest": "0.34.2"
   }
 }
