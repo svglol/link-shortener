@@ -12,7 +12,7 @@
     "test:types": "nuxt typecheck"
   },
   "dependencies": {
-    "@formkit/auto-animate": "^0.7.0",
+    "@formkit/auto-animate": "^0.8.0",
     "@formkit/core": "^0.18.0",
     "@formkit/nuxt": "^1.0.0",
     "@nuxtjs/color-mode": "^3.3.0",
