@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.8.0
     version: 0.8.0
   '@formkit/core':
-    specifier: ^0.18.0
-    version: 0.18.0
+    specifier: ^1.0.0
+    version: 1.0.0
   '@formkit/nuxt':
     specifier: ^1.0.0
     version: 1.0.0(tailwindcss@3.3.3)
@@ -1073,12 +1073,6 @@ packages:
     resolution: {integrity: sha512-G8f7489ka0mWyi+1IEZT+xgIwcpWtRMmE2x+IrVoQ+KM1cP6VDj/TbujZjwxdb0P8w8b16/qBfViRmydbYHwMw==}
     dev: false
 
-  /@formkit/core@0.18.0:
-    resolution: {integrity: sha512-L7yZ38AfV1eVwZo1XO1G+Se+sNo7InZGYawm6JOkwpnieTVr146oHy70qjfVidoa0yT5/P6B3BXjc8RujmcQHA==}
-    dependencies:
-      '@formkit/utils': 0.18.0
-    dev: false
-
   /@formkit/core@1.0.0:
     resolution: {integrity: sha512-rDFVwNngLcakltasYzmyYDPAYoCoakK+7h4/5V1bE1FQDabhVvJIc5EDH8U80RAKNLGS9xiQ1JK4FHGcZ3K+oQ==}
     dependencies:
@@ -1155,10 +1149,6 @@ packages:
     dependencies:
       '@formkit/core': 1.0.0
       tailwindcss: 3.3.3
-    dev: false
-
-  /@formkit/utils@0.18.0:
-    resolution: {integrity: sha512-l+zZN5IR3tQ/GuTCQ33N+ggiFC/A1p0YlqpUBvc0E5RD1ogfScPIWaaa8NZYSPt9SplcVgo7H8vfdAeqHrOrDw==}
     dev: false
 
   /@formkit/utils@1.0.0:

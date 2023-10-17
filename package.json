@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.0",
-    "@formkit/core": "^0.18.0",
+    "@formkit/core": "^1.0.0",
     "@formkit/nuxt": "^1.0.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
