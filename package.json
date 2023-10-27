@@ -32,13 +32,13 @@
   "devDependencies": {
     "@nuxt/devtools": "0.8.5",
     "@nuxt/eslint-config": "0.1.1",
-    "@typescript-eslint/eslint-plugin": "6.8.0",
-    "@typescript-eslint/parser": "6.8.0",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
     "eslint": "8.52.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-nuxt": "4.0.0",
     "eslint-plugin-prettier": "5.0.1",
-    "eslint-plugin-vue": "9.17.0",
+    "eslint-plugin-vue": "9.18.1",
     "happy-dom": "10.10.4",
     "nuxt-vitest": "0.10.5",
     "vitest": "0.34.2"
