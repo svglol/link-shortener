@@ -21,7 +21,7 @@
     "@types/uuid": "^9.0.2",
     "@vueuse/core": "^10.2.1",
     "@vueuse/nuxt": "^10.2.1",
-    "daisyui": "^3.5.0",
+    "daisyui": "^4.0.0",
     "nuxt": "3.10.3",
     "nuxt-icon": "^0.6.0",
     "prisma": "^5.0.0",
