@@ -46,7 +46,7 @@ dependencies:
     version: 5.0.0
   trpc-nuxt:
     specifier: ^0.10.6
-    version: 0.10.20(@trpc/client@10.45.2)(@trpc/server@10.45.2)
+    version: 0.10.21(@trpc/client@10.45.2)(@trpc/server@10.45.2)(ofetch@1.3.4)
   uuid:
     specifier: ^9.0.0
     version: 9.0.0
@@ -1813,7 +1813,7 @@ packages:
       '@nuxt/schema': 3.8.2
       c12: 1.9.0
       consola: 3.2.3
-      defu: 6.1.4
+      defu: 6.1.3
       globby: 14.0.1
       hash-sum: 2.0.0
       ignore: 5.3.1
@@ -1824,7 +1824,7 @@ packages:
       pkg-types: 1.0.3
       scule: 1.3.0
       semver: 7.6.0
-      ufo: 1.4.0
+      ufo: 1.5.3
       unctx: 2.3.1
       unimport: 3.7.1(rollup@4.12.0)
       untyped: 1.4.2
@@ -1851,7 +1851,7 @@ packages:
       pkg-types: 1.0.3
       scule: 1.2.0
       semver: 7.5.4
-      ufo: 1.3.2
+      ufo: 1.5.3
       unctx: 2.3.1
       unimport: 3.7.1(rollup@4.12.0)
       untyped: 1.4.0
@@ -1936,13 +1936,13 @@ packages:
     dependencies:
       '@nuxt/ui-templates': 1.3.1
       consola: 3.2.3
-      defu: 6.1.4
+      defu: 6.1.3
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.0.3
       scule: 1.3.0
       std-env: 3.5.0
-      ufo: 1.4.0
+      ufo: 1.5.3
       unimport: 3.7.1(rollup@4.12.0)
       untyped: 1.4.2
     transitivePeerDependencies:
@@ -1962,7 +1962,7 @@ packages:
       pkg-types: 1.0.3
       scule: 1.2.0
       std-env: 3.7.0
-      ufo: 1.3.2
+      ufo: 1.5.3
       unimport: 3.7.1(rollup@4.12.0)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -4475,6 +4475,9 @@ packages:
   /cookie-es@1.0.0:
     resolution: {integrity: sha512-mWYvfOLrfEc996hlKcdABeIiPHUPC6DM2QYZdGGOvhOTbA3tjm2eBwqlJpoFdjC89NI4Qt6h0Pu06Mp+1Pj5OQ==}
 
+  /cookie-es@1.1.0:
+    resolution: {integrity: sha512-L2rLOcK0wzWSfSDA33YR+PUHDG10a8px7rUHKWbGLP4YfbsMed2KFUw5fczvDPbT98DDe3LEzviswl810apTEw==}
+
   /cookies@0.8.0:
     resolution: {integrity: sha512-8aPsApQfebXnuI+537McwYsDtjVxGm8gTIzQI3FDW6t5t/DAhERxtnbEPN/8RX+uZthoz4eCOgloXaE5cYyNow==}
     engines: {node: '>= 0.8'}
@@ -5663,14 +5666,14 @@ packages:
   /h3@1.11.1:
     resolution: {integrity: sha512-AbaH6IDnZN6nmbnJOH72y3c5Wwh9P97soSVdGSBbcDACRdkC0FEWf25pzx4f/NuOCK6quHmW18yF2Wx+G4Zi1A==}
     dependencies:
-      cookie-es: 1.0.0
+      cookie-es: 1.1.0
       crossws: 0.2.4
       defu: 6.1.4
       destr: 2.0.3
       iron-webcrypto: 1.1.0
       ohash: 1.1.3
-      radix3: 1.1.1
-      ufo: 1.4.0
+      radix3: 1.1.2
+      ufo: 1.5.3
       uncrypto: 0.1.3
       unenv: 1.9.0
     transitivePeerDependencies:
@@ -5681,9 +5684,9 @@ packages:
     dependencies:
       cookie-es: 1.0.0
       defu: 6.1.2
-      destr: 2.0.2
-      iron-webcrypto: 0.8.0
-      radix3: 1.1.0
+      destr: 2.0.1
+      iron-webcrypto: 0.8.2
+      radix3: 1.0.1
       ufo: 1.2.0
       uncrypto: 0.1.3
       unenv: 1.9.0
@@ -5920,8 +5923,8 @@ packages:
     resolution: {integrity: sha512-K/UmlEhPCPXEHV5hAtH5C0tI5JnFuOrv4yO/j7ODPl3HaiiHBLbOLTde+ieUaAyfCATe4LoAnclyF+hmSCOVmQ==}
     dev: false
 
-  /iron-webcrypto@0.8.0:
-    resolution: {integrity: sha512-gScdcWHjTGclCU15CIv2r069NoQrys1UeUFFfaO1hL++ytLHkVw7N5nXJmFf3J2LEDMz1PkrvC0m62JEeu1axQ==}
+  /iron-webcrypto@0.8.2:
+    resolution: {integrity: sha512-jGiwmpgTuF19Vt4hn3+AzaVFGpVZt7A1ysd5ivFel2r4aNVFwqaYa6aU6qsF1PM7b+WFivZHz3nipwUOXaOnHg==}
     dev: false
 
   /iron-webcrypto@1.1.0:
@@ -7104,7 +7107,7 @@ packages:
       citty: 0.1.5
       execa: 8.0.1
       pathe: 1.1.2
-      ufo: 1.3.2
+      ufo: 1.5.3
 
   /nypm@0.3.6:
     resolution: {integrity: sha512-2CATJh3pd6CyNfU5VZM7qSwFu0ieyabkEdnogE30Obn1czrmOYiZ8DOZLe1yBdLKWoyD3Mcy2maUs+0MR3yVjQ==}
@@ -7125,7 +7128,7 @@ packages:
       consola: 3.2.3
       execa: 8.0.1
       pathe: 1.1.2
-      ufo: 1.5.3
+      ufo: 1.4.0
 
   /object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -7142,6 +7145,14 @@ packages:
       destr: 2.0.3
       node-fetch-native: 1.6.2
       ufo: 1.4.0
+
+  /ofetch@1.3.4:
+    resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
+    dependencies:
+      destr: 2.0.3
+      node-fetch-native: 1.6.4
+      ufo: 1.5.3
+    dev: false
 
   /ohash@1.1.3:
     resolution: {integrity: sha512-zuHHiGTYTA1sYJ/wZN+t5HKZaH23i4yI1HMwbuXm24Nid7Dv0KcuRlKoNKS9UNfAVSBlnGLcuQrnOKWOZoEGaw==}
@@ -7967,8 +7978,8 @@ packages:
   /radix3@1.1.0:
     resolution: {integrity: sha512-pNsHDxbGORSvuSScqNJ+3Km6QAVqk8CfsCBIEoDgpqLrkD2f3QM4I7d1ozJJ172OmIcoUcerZaNWqtLkRXTV3A==}
 
-  /radix3@1.1.1:
-    resolution: {integrity: sha512-yUUd5VTiFtcMEx0qFUxGAv5gbMc1un4RvEO1JZdP7ZUl/RHygZK6PknIKntmQRZxnMY3ZXD2ISaw1ij8GYW1yg==}
+  /radix3@1.1.2:
+    resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
   /randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -8800,15 +8811,17 @@ packages:
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
-  /trpc-nuxt@0.10.20(@trpc/client@10.45.2)(@trpc/server@10.45.2):
-    resolution: {integrity: sha512-OSehO1f/nmJ5osmhmyAf0UxhmR5Dy7IU3d52e1ZC3G9i3sOh3mhvN75msoeNCeOzl8ESN73JRQ7gDt0kwkAhZA==}
+  /trpc-nuxt@0.10.21(@trpc/client@10.45.2)(@trpc/server@10.45.2)(ofetch@1.3.4):
+    resolution: {integrity: sha512-QNrKFNosZ6ax8QLG6VBi3VUurXvoyrRvt0utvuQk2H1ej54YG6SbHEfBnGSIsz7HyDJt4mFvdNIE1lbebEtUAQ==}
     peerDependencies:
       '@trpc/client': ^10.38.1 <11
       '@trpc/server': ^10.38.1 <11
+      ofetch: ^1.3.3
     dependencies:
       '@trpc/client': 10.45.2(@trpc/server@10.45.2)
       '@trpc/server': 10.45.2
       h3: 1.11.1
+      ofetch: 1.3.4
       ohash: 1.1.3
     transitivePeerDependencies:
       - uWebSockets.js
@@ -8900,9 +8913,6 @@ packages:
   /ufo@1.2.0:
     resolution: {integrity: sha512-RsPyTbqORDNDxqAdQPQBpgqhWle1VcTSou/FraClYlHf6TZnQcGslpLcAphNR+sQW4q5lLWLbOsRlh9j24baQg==}
     dev: false
-
-  /ufo@1.3.2:
-    resolution: {integrity: sha512-o+ORpgGwaYQXgqGDwd+hkS4PuZ3QnmqMMxRuajK/a38L6fTpcE5GPIfrf+L/KemFzfUpeUQc1rRS1iDBozvnFA==}
 
   /ufo@1.4.0:
     resolution: {integrity: sha512-Hhy+BhRBleFjpJ2vchUNN40qgkh0366FWJGqVLYBHev0vpHTrXSA0ryT+74UiW6KWsldNurQMKGqCm1M2zBciQ==}
@@ -9458,7 +9468,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.8.2
       '@vue/test-utils': 2.4.1(vue@3.4.21)
-      defu: 6.1.4
+      defu: 6.1.3
       estree-walker: 3.0.3
       fake-indexeddb: 5.0.1
       h3: 1.11.1
@@ -9466,8 +9476,8 @@ packages:
       local-pkg: 0.5.0
       magic-string: 0.30.7
       ofetch: 1.3.3
-      radix3: 1.1.0
-      ufo: 1.4.0
+      radix3: 1.1.2
+      ufo: 1.5.3
       unenv: 1.9.0
       vitest: 0.34.6(happy-dom@10.11.2)
       vue: 3.4.21(typescript@5.4.3)
