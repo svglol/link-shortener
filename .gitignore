@@ -7,3 +7,4 @@ nuxt.d.ts
 dev.db
 .vercel
 dist
+.data

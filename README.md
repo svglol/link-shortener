@@ -1,28 +1,11 @@
-# Link Shortener built with Nuxt3-Prisma-TRPC 
+# Link Shortener built with Nuxt + Nuxt Hub
 ## Built with
-- [Nuxt3](https://github.com/nuxt/framework)
-- [Prisma](https://github.com/prisma/prisma)
-- [TRPC-Nuxt](https://github.com/wobsoriano/trpc-nuxt)
-
-## Plugins
-- [Tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-- [Formkit](https://github.com/formkit/formkit)
-- [Daisyui](https://github.com/saadeghi/daisyui)
-- [Auto Animate](https://github.com/formkit/auto-animate)
+- [Nuxt](https://github.com/nuxt/framework)
+- [Nuxt Hub](https://github.com/nuxt-hub/core)
 
 ## Environment Variables
 ```bash
-DATABASE_URL=postgres://user:pass@host:port/database
 NUXT_PUBLIC_BASE_URL=http://localhost:3000/
-```
-
-## Prisma Setup
-```
-# setup database
-npx prisma migrate dev --name init
-
-# generate prisma client
-npx prisma generate
 ```
 
 ## Setup

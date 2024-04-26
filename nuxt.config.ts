@@ -1,14 +1,27 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@formkit/nuxt',
-    '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     '@nuxt/devtools',
     'nuxt-icon',
-    'nuxt-vitest',
+    '@nuxt/eslint',
+    '@nuxt/test-utils/module',
+    '@nuxthub/core',
+    '@nuxt/ui',
+    '@nuxt/fonts',
   ],
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
+
+  hub: {
+    database: true,
+    cache: true,
+    kv: true,
+  },
 
   runtimeConfig: {
     public: {
@@ -16,27 +29,13 @@ export default defineNuxtConfig({
     },
   },
 
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config.ts',
-    injectPosition: 0,
-  },
-
-  formkit: {
-    configFile: 'formkit.config.js',
+  colorMode: {
+    preference: 'system',
+    fallback: 'dark',
   },
 
   typescript: {
     strict: true,
-  },
-
-  colorMode: {
-    dataValue: 'theme',
-    classSuffix: '',
-  },
-
-  build: {
-    transpile: ['trpc-nuxt'],
   },
 
   devtools: {
