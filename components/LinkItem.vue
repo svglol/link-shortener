@@ -1,5 +1,5 @@
 <template>
-  <UCard :ui="{ header: { padding: 'p-0 sm:p-0' }, footer: { padding: 'p-0 sm:p-0' } }" class="w-[300px]">
+  <UCard :ui="{ header: { padding: 'p-0 sm:p-0' }, footer: { padding: 'p-0 sm:p-0' } }" class="w-[294px]">
     <template #header>
       <NuxtLink :to="`/${item.id}`" target="_blank">
         <NuxtImg :src="`${config.public.baseUrl}images/${item.qrCode}`" alt="QR Code" width="300" class="rounded-t-md" height="300" />

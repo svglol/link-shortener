@@ -13,7 +13,7 @@
         </div>
       </UForm>
     </div>
-    <div v-auto-animate class="gap-2 flex flex-wrap justify-center 2xl:justify-normal">
+    <div v-auto-animate class="gap-4 flex flex-wrap justify-center 2xl:justify-normal">
       <LinkItem v-for="item in links" :key="item.id" :item="item" @delete="deleteLink" />
     </div>
   </div>
