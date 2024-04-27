@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-50 dark:bg-gray-950 flex min-h-screen flex-auto flex-col transition-colors">
     <SiteHeader />
     <NuxtPage />
   </div>

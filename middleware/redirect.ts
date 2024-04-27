@@ -1,11 +1,9 @@
-export default defineNuxtRouteMiddleware(async to => {
+export default defineNuxtRouteMiddleware(async (to) => {
   if (to.params.id) {
-    const { $client } = useNuxtApp()
-    const { data: link } = await $client.get.useQuery({
-      id: String(to.params.id),
-    })
+    const { data: link } = await useFetch(`/api/link/${to.params.id}`)
     if (link) {
-      return externalRedirect(link.value?.url ?? '')
+      await $fetch(`/api/link/${link.value?.id}/increment-views`, { method: 'POST' })
+      navigateTo(link.value?.url ?? '', { external: true })
     }
   }
   return createError({ statusCode: 404, statusMessage: 'Page Not Found' })
