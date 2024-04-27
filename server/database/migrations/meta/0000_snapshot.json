@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "100d13a0-77e2-44ad-a091-f9fd26b333ff",
+  "id": "1748ebf6-04e0-4270-95f5-59b03b808095",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "links": {
@@ -16,11 +16,11 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false,
-          "default": "CURRENT_TIMESTAMP"
+          "default": "(unixepoch())"
         },
         "url": {
           "name": "url",
@@ -31,6 +31,13 @@
         },
         "uuid": {
           "name": "uuid",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "qr_code": {
+          "name": "qr_code",
           "type": "text",
           "primaryKey": false,
           "notNull": true,

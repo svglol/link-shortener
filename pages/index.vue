@@ -8,16 +8,14 @@
           </UFormGroup>
 
           <UButton type="submit" size="xl" :ui="{ rounded: 'rounded-r-md rounded-l-none' }" class="max-h-[2.75rem]">
-            Submit
+            Shorten
           </UButton>
         </div>
       </UForm>
     </div>
-    <ul v-auto-animate class="space-y-2 pb-2">
-      <li v-for="item in links" :key="item.id">
-        <LinkItem :item="item" @delete="deleteLink" />
-      </li>
-    </ul>
+    <div v-auto-animate class="gap-2 flex flex-wrap justify-center 2xl:justify-normal">
+      <LinkItem v-for="item in links" :key="item.id" :item="item" @delete="deleteLink" />
+    </div>
   </div>
 </template>
 
@@ -25,6 +23,7 @@
 import { z } from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 
+const toast = useToast()
 const uuid = useUUID()
 const config = useRuntimeConfig()
 const { data: links } = await useFetch(`/api/links/${uuid.value}`)
@@ -37,6 +36,7 @@ async function deleteLink(item: Link) {
   })
   if (links.value)
     links.value = links.value.filter(link => link.id !== item.id)
+  toast.add({ title: 'Link deleted!', icon: 'heroicons:trash-20-solid' })
 }
 
 const schema = z.object({

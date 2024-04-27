@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/devtools',
-    'nuxt-icon',
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
     '@nuxthub/core',
     '@nuxt/ui',
     '@nuxt/fonts',
+    '@nuxt/image',
   ],
 
   eslint: {
@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     database: true,
     cache: true,
     kv: true,
+    blob: true,
   },
 
   runtimeConfig: {
@@ -40,5 +41,11 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+  },
+
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
   },
 })
