@@ -19,7 +19,7 @@
   "dependencies": {
     "@formkit/auto-animate": "0.8.2",
     "@nuxt/fonts": "0.6.1",
-    "@nuxt/image": "1.6.0",
+    "@nuxt/image": "1.8.0",
     "@nuxt/ui": "2.15.2",
     "@nuxthub/core": "0.5.17",
     "@vueuse/core": "10.9.0",
