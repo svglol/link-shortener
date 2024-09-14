@@ -42,6 +42,6 @@
     "happy-dom": "14.7.1",
     "vitest": "1.5.2",
     "vitest-environment-nuxt": "1.0.0",
-    "wrangler": "3.52.0"
+    "wrangler": "3.78.2"
   }
 }
