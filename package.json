@@ -23,7 +23,7 @@
     "@nuxt/ui": "2.15.2",
     "@nuxthub/core": "0.5.17",
     "@vueuse/core": "10.9.0",
-    "@vueuse/nuxt": "10.9.0",
+    "@vueuse/nuxt": "11.1.0",
     "drizzle-orm": "0.30.9",
     "nuxt": "3.11.2",
     "uuid": "9.0.1",
