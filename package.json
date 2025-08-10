@@ -34,7 +34,7 @@
     "@nuxt/devtools": "1.2.0",
     "@nuxt/eslint": "^0.3.10",
     "@nuxt/test-utils": "3.12.1",
-    "@types/uuid": "9.0.8",
+    "@types/uuid": "10.0.0",
     "@vue/test-utils": "2.4.5",
     "drizzle-kit": "0.20.17",
     "eslint": "9.1.1",
